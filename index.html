@@ -193,7 +193,69 @@
 
         </section>
 
+        <!-- Sección de reserva de turnos -->
+
+        <section class="sección-turnos">
+            <div class="turnos-titulo">
+                <span>AGENDA ONLINE</span>
+                <h2 class="titulo-seccion">RESERVA TU ESPACIO</h2>
+                <p>Selecciona la fecha y servicio de tu preferencia</p>
+            </div>
+
+            <!-- Formulario -->
+
+            <div class="form-contenedor">
+                <form id="form-reserva">
+                    <div class="form-grid">
+
+                    <!-- Campo nombre y apellido -->
+                    
+                    <div class="form-grupo">
+                        <label for="nombre">NOMBRE COMPLETO</label>
+                        <input type="text" id="nombre" placeholder="Lucas Rodriguez" required>
+                    </div>
+
+                    <!-- Campo teléfono -->
+                    
+                    <div class="form-grupo">
+                        <label for="telefono">TELÉFONO</label>
+                        <input type="tel" id="telefono" placeholder="+54 11 1234-5678" required>
+                    </div>
+
+                    <!-- Campo servicio (Desplegable) -->
+
+                    <div class="form-grupo">
+                        <label for="servicio">SERVICIO</label>
+                        <select id="servicio" required>
+                            <option value="#">Selecciona un servicio</option>
+                            <option value="corte de cabello">Corte de cabello</option>
+                            <option value="perfilado de barba">Perfilado de barba</option>
+                            <option value="completo express">Servicio completo</option>
+                        </select>
+                    </div>
+
+                    <!-- Campo fecha -->
+
+                    <div class="form-grupo">
+                        <label for="fecha">FECHA DESEADA</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+
+                    <!-- Boton de enviar -->
+
+                    <button type ="submit" class="boton-reserva">CONFIRMAR RESERVA</button>
+                </form>
+            </div>
+            
+        </section>
+
         
+
+
+<!-- Script Js -->
+
+<script src="main.js"></script>
+
 </body>
 
 </html>
