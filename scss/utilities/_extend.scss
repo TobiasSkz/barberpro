@@ -1,2 +1,36 @@
 @use "variables" as *;
 @use "mixin" as *;
+
+%barra-nav{
+    color: $color-textos;
+    background-color: $fondo-pagina;
+    width: 100%;
+    text-decoration: none;
+}
+
+%lista-nav{
+    font-family: $fuente;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    list-style: none;
+    color: $color-textos;
+    align-items: center;
+    @include flex(column, center, null, 0.5rem);
+    margin-bottom: 0.5rem;
+}
+
+%boton-reservar-cita{
+    font-family: $fuente;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: $color-boton-reservar-texto;
+    background-color: $color-boton-reservar-fondo;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    width: fit-content;
+    margin: 0 auto;
+    @include flex(row, center, center, 0.5rem);
+}

@@ -3,3 +3,18 @@
 @use "../utilities/mixin" as *;
 @use "../utilities/aninations" as *;
 
+body{
+    background-color: $fondo-pagina;
+
+    background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+
+    background-size: 24px 24px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: $color-h1;
+}
+
+p, a{
+    color: $color-textos;
+}

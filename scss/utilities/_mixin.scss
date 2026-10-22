@@ -17,3 +17,29 @@
     grid-template-areas: $template-areas;
     gap: $gap;
 }
+
+@mixin header-pc{
+    @include flex(row, space-between, center, 0.5rem);
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 20px 40px;
+
+    .logo{
+        @include flex(null, null, center, null);
+    }
+
+    .lista-navbar{
+        @include flex(row, null, null, 2rem);
+        list-style: none;
+    }
+
+    .boton-reservar-cita{
+        margin-left: auto;
+        white-space: nowrap;
+        flex-shrink: 0;
+
+        span{
+            font-size: 1.25rem;
+        }
+    }
+}
