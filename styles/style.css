@@ -162,6 +162,26 @@ p, a {
   font-size: 2rem;
 }
 
+.seccion-trabajos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.seccion-trabajos .span-portafolio {
+  color: #a3a3a3;
+  font-family: "Syne", sans-serif;
+  font-size: 0.85rem;
+}
+.seccion-trabajos h2 {
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  font-style: bold;
+  font-size: 2rem;
+}
+
 .hero {
   padding: 1rem;
 }
@@ -406,6 +426,45 @@ p, a {
     width: 100%;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 1rem;
+  }
+}
+
+.foto-trabajo1, .foto-trabajo2, .foto-trabajo3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0.5rem;
+  background-color: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  height: 100%;
+  max-width: 650px;
+  height: 550px;
+  object-fit: cover;
+  margin-bottom: 1.25rem;
+}
+.foto-trabajo1 img, .foto-trabajo2 img, .foto-trabajo3 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .fotos-trabajos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .fotos-trabajos .foto-trabajo1, .fotos-trabajos .foto-trabajo2, .fotos-trabajos .foto-trabajo3 {
+    padding: 1.25rem;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 1rem;
   }
 }
 

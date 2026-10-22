@@ -54,3 +54,7 @@
 @mixin servicios-pc{
     @include flex (column, center, center, 1rem);
 }
+
+@mixin trabajos-pc{
+    @include flex(row, center, center, 3rem);
+}

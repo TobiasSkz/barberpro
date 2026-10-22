@@ -38,3 +38,23 @@ p, a{
         font-size: 2rem;
     }
 }
+
+// Sección trabajos recientes
+
+.seccion-trabajos{
+    @include flex(column, center, center, 1.5rem);
+    padding: 1rem;
+
+    .span-portafolio{
+        color: $color-textos;
+        font-family: $fuente-titulos;
+        font-size: 0.85rem;
+    }
+
+    h2{
+        text-align: center;
+        font-family: $fuente-titulos;
+        font-style: bold;
+        font-size: 2rem;
+    }
+}
