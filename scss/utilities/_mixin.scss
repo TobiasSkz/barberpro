@@ -1,0 +1,19 @@
+// Flex
+
+@mixin flex($direccion, $justificar, $alinear, $gap){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justificar;
+    align-items: $alinear;
+    gap: $gap;
+}
+
+// Grid
+
+@mixin grid($columnas, $filas, $template-areas, $gap){
+    display: grid;
+    grid-template-columns: $columnas;
+    grid-template-rows: $filas;
+    grid-template-areas: $template-areas;
+    gap: $gap;
+}

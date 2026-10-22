@@ -1,0 +1,11 @@
+@use "utilities/variables";
+@use "utilities/extend";
+@use "utilities/mixin";
+@use "utilities/aninations";
+
+@use "base/reseteo";
+@use "base/generales";
+
+@use "layout/header";
+@use "layout/main";
+@use "layout/footer";
