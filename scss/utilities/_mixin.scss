@@ -43,3 +43,10 @@
         }
     }
 }
+
+@mixin tarjeta-hero-pc{
+    @include flex(row, space-between, flex-start, 0.5rem);
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 20px 40px;
+}

@@ -5,11 +5,14 @@
 
 // === Tarjeta Hero ===
 
+.hero{
+    padding: 1rem;
+}
+
 .tarjeta-hero{
     background-color: $fondo-hero;
     padding: 1.5rem;
     border-radius: 1rem;
-    margin: 1rem;
 
     .hero-texto h1{
         text-align: center;
@@ -98,4 +101,52 @@
         }
     }
 
+    @media (min-width: 1024px){
+        @include tarjeta-hero-pc;
+
+        .hero-imagen{
+            position: relative;
+            
+            img{
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+            }
+
+            .tarjeta-hero-imagen{
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+
+                // Retoque del color de la tarjeta
+
+                background-color: rgba(0, 0, 0, 0.85);
+                backdrop-filter: blur(8px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 1.5rem;
+            }
+
+            .separador{
+                display: none;
+            }
+
+            .hero-estadisticas{
+                display: none;
+            }
+        }
+
+        .hero-texto{
+
+            h1{
+                font-family: $fuente-titulos;
+                font-weight: 800;
+                font-size: clamp(2.5rem, 5vw, 5.5rem);
+                text-transform: uppercase;
+                line-height: 0.95;
+            }
+            
+
+        }
+    }
 }
