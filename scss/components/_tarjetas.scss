@@ -150,3 +150,91 @@
         }
     }
 }
+
+// Sección Servicios
+
+.servicio1, .servicio2, .servicio3{
+    @include flex(column, space-between, stretch, 0.5rem);
+    
+    background-color: $fondo-hero;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    height: 100%;
+
+    .superior-tarjeta{
+        @include flex(row, space-between, center, 0);
+
+        .icono-tarjeta{
+            width: 2.5rem;
+            height: auto;
+        }
+
+        .servicio-precio{
+            font-family: $fuente-titulos;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $color-textos;
+        }
+    }
+
+    .contenido-tarjeta{
+        @include flex(column, flex-start, flex-start, 0.5rem);
+
+        .titulo-tarjeta{
+            font-family: $fuente-titulos;
+            font-size: 1.25rem;
+            color: $color-h1;
+        }
+
+        .descripcion-tarjeta{
+            font-family: $fuente;
+            font-width: 300;
+            font-size: 1rem;
+            color: $color-textos;
+            line-height: 1.4;
+        }
+    }
+
+    .footer-tarjeta{
+        @include flex(row, space-between, center, 0);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 1rem;
+
+        .duracion-tarjeta{
+            font-size: 0.8rem;
+            color: $color-textos;
+            letter-spacing: 0.05em;
+        }
+
+        .boton-reservar-tarjeta{
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: $color-boton-reservar-texto;
+            background-color: $color-boton-reservar-fondo;
+            padding: 0.75rem;
+            border-radius: 1rem;
+            transition: opacity 0.5s;
+
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+
+    @media (min-width: 1024px){
+        @include servicios-pc;
+
+        .superior-tarjeta{
+            @include flex(row, space-between, center, 0);
+            width: 100%;
+        }
+
+        .footer-tarjeta{
+            @include flex(row, space-between, center, 0);
+            width: 100%;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1rem;
+        }
+    }
+}
