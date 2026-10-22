@@ -142,4 +142,103 @@ p, a {
   color: #a3a3a3;
 }
 
+.tarjeta-hero {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.tarjeta-hero .hero-texto h1 {
+  text-align: center;
+  width: 100%;
+  font-family: "Syne", sans-serif;
+  font-style: bold;
+}
+.tarjeta-hero p {
+  font: "Inter", sans-serif;
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+.tarjeta-hero .botones-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+.tarjeta-hero .boton-reservar-cita-hero, .tarjeta-hero .boton-ver-servicios {
+  color: #0a0a0a;
+  background-color: #FFFFFF;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.tarjeta-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+}
+.tarjeta-hero .tarjeta-hero-imagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  background-color: #0a0a0a;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.tarjeta-hero .tarjeta-hero-imagen .hero-barbero {
+  font-family: "Syne", sans-serif;
+  font-size: 1.5rem;
+}
+.tarjeta-hero .tarjeta-hero-imagen .hero-subtitulo {
+  margin-bottom: 0.5rem;
+  padding: 0.25rem;
+  color: #a3a3a3;
+  font-size: 1rem;
+}
+.tarjeta-hero .tarjeta-hero-imagen .separador {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 80%;
+  margin-bottom: 0.7rem;
+}
+.tarjeta-hero .tarjeta-hero-imagen .hero-estadisticas {
+  color: #a3a3a3;
+  font-family: "Inter", sans-serif;
+  font-style: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.tarjeta-hero .tarjeta-hero-imagen .hero-estadisticas .estadistica1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.15rem;
+}
+.tarjeta-hero .tarjeta-hero-imagen .hero-estadisticas .estadistica1 .estadistica-texto {
+  font-family: "Syne", sans-serif;
+}
+.tarjeta-hero .tarjeta-hero-imagen .hero-estadisticas .estadistica2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.15rem;
+}
+.tarjeta-hero .tarjeta-hero-imagen .hero-estadisticas .estadistica2 .estadistica-texto {
+  font-family: "Syne", sans-serif;
+}
+
 /*# sourceMappingURL=style.css.map */
