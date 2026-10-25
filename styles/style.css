@@ -182,6 +182,52 @@ p, a {
   font-size: 2rem;
 }
 
+.seccion-turnos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.seccion-turnos .turnos-titulo {
+  background-color: #0f0f0f;
+  padding: 1.5rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+.seccion-turnos .turnos-titulo .span-turnos {
+  padding-bottom: 1rem;
+  color: #a3a3a3;
+  font-family: "Syne", sans-serif;
+  font-size: 1.15rem;
+}
+.seccion-turnos .turnos-titulo h2 {
+  text-align: left;
+  font-family: "Syne", sans-serif;
+  font-style: bold;
+  font-size: 2rem;
+  margin: 0.75rem 0 0.75rem 0;
+}
+.seccion-turnos .turnos-titulo p {
+  padding-bottom: 1rem;
+  color: #a3a3a3;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+}
+@media (min-width: 1024px) {
+  .seccion-turnos .turnos-titulo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seccion-turnos .turnos-titulo .span-turnos {
+    padding-bottom: 0;
+  }
+}
+
 .hero {
   padding: 1rem;
 }
@@ -465,6 +511,74 @@ p, a {
     width: 100%;
     max-width: 360px;
     border-radius: 1rem;
+  }
+}
+
+.form-contenedor {
+  background-color: #1a1a1a;
+  padding: 2.5rem 5rem 2.5rem 5rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.form-contenedor .form-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+.form-contenedor .form-grid .form-grupo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.form-contenedor .form-grid label {
+  color: #FFFFFF;
+  font-family: "Syne", sans-serif;
+  font-style: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.form-contenedor .form-grid input, .form-contenedor .form-grid select {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.form-contenedor .form-grid select {
+  margin-bottom: 0.5rem;
+}
+.form-contenedor .form-grid .boton-reserva {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-family: "Syne", sans-serif;
+}
+@media (min-width: 1024px) {
+  .form-contenedor .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "form1 form2" "form3 form4";
+    gap: 1rem;
+    padding-bottom: 0;
+  }
+  .form-contenedor .form-grid .form1 {
+    grid-area: form1;
+  }
+  .form-contenedor .form-grid .form2 {
+    grid-area: form2;
+  }
+  .form-contenedor .form-grid .form3 {
+    grid-area: form3;
+  }
+  .form-contenedor .form-grid .form4 {
+    grid-area: form4;
+  }
+  .form-contenedor .form-grid .boton-reserva-form {
+    grid-column: 1/-1;
+    justify-self: center;
   }
 }
 

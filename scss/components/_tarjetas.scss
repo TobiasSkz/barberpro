@@ -145,8 +145,6 @@
                 text-transform: uppercase;
                 line-height: 0.95;
             }
-            
-
         }
     }
 }
@@ -272,5 +270,56 @@
             max-width: 360px;
             border-radius: 1rem;
         }      
+    }
+}
+
+// Sección reserva de turnos
+
+.form-contenedor{
+    background-color: $fondo-hero;
+    padding: 2.5rem 5rem 2.5rem 5rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+    .form-grid{
+        @include flex(column, center, center, 0.75rem);
+
+        .form-grupo{
+            @include flex(column, center, center, 0.5rem);
+        }
+
+        label{
+            color: $color-h1;
+            font-family: $fuente-titulos;
+            font-style: bold;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        input, select{
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        select{
+            margin-bottom: 0.5rem;
+        }
+
+        .boton-reserva{
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            font-family: $fuente-titulos;
+        }
+
+        @media (min-width: 1024px){
+            @include turnos-pc;
+
+            .boton-reserva-form{
+                grid-column: 1 / -1;
+                justify-self: center;
+            }
+        }
     }
 }

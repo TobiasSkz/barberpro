@@ -59,8 +59,23 @@
     @include flex(row, center, center, 3rem);
 }
 
-@mixin filosofia-pc{
-    @include flex(row, space-between, flex-start, 0.5rem);
-    flex-wrap: nowrap;
-    width: 100%;
+@mixin turnos-pc{
+    @include grid(repeat(2, 1fr), auto auto, "form1 form2" "form3 form4", 1rem);
+    padding-bottom: 0;
+
+    .form1{
+        grid-area: form1;
+    }
+
+    .form2{
+        grid-area: form2;
+    }
+
+    .form3{
+        grid-area: form3;
+    }
+
+    .form4{
+        grid-area: form4;
+    }
 }

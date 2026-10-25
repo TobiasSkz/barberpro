@@ -183,12 +183,11 @@
             </article>
         </section>
 
-
         <!-- Sección de reserva de turnos -->
 
-        <section class="sección-turnos">
+        <section class="seccion-turnos">
             <div class="turnos-titulo">
-                <span>AGENDA ONLINE</span>
+                <span class="span-turnos">AGENDA ONLINE</span>
                 <h2 class="titulo-seccion">RESERVA TU ESPACIO</h2>
                 <p>Selecciona la fecha y servicio de tu preferencia</p>
             </div>
@@ -196,26 +195,26 @@
             <!-- Formulario -->
 
             <div class="form-contenedor">
-                <form id="form-reserva">
+                <div id="form-reserva">
                     <div class="form-grid">
 
                     <!-- Campo nombre y apellido -->
                     
-                    <div class="form-grupo">
+                    <div class="form-grupo form1">
                         <label for="nombre">NOMBRE COMPLETO</label>
                         <input type="text" id="nombre" placeholder="Lucas Rodriguez" required>
                     </div>
 
                     <!-- Campo teléfono -->
                     
-                    <div class="form-grupo">
+                    <div class="form-grupo form2">
                         <label for="telefono">TELÉFONO</label>
                         <input type="tel" id="telefono" placeholder="+54 11 1234-5678" required>
                     </div>
 
                     <!-- Campo servicio (Desplegable) -->
 
-                    <div class="form-grupo">
+                    <div class="form-grupo form3">
                         <label for="servicio">SERVICIO</label>
                         <select id="servicio" required>
                             <option value="#">Selecciona un servicio</option>
@@ -227,14 +226,17 @@
 
                     <!-- Campo fecha -->
 
-                    <div class="form-grupo">
+                    <div class="form-grupo form4">
                         <label for="fecha">FECHA DESEADA</label>
                         <input type="date" id="fecha" required>
                     </div>
 
                     <!-- Boton de enviar -->
+                    
+                    <div class="boton-reserva-form">
+                        <button type="submit" class="boton-reserva">CONFIRMAR RESERVA</button>
+                    </div>
 
-                    <button type ="submit" class="boton-reserva">CONFIRMAR RESERVA</button>
                 </form>
             </div>
             

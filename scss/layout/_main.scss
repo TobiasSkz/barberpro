@@ -58,3 +58,49 @@ p, a{
         font-size: 2rem;
     }
 }
+
+// Sección reserva de turnos
+
+.seccion-turnos{
+    @include flex(column, center, center, 1.5rem);
+    padding: 1rem;
+
+
+    .turnos-titulo{
+        background-color: $fondo-turnos;
+        padding: 1.5rem;
+        width: 100%;
+        border-radius: 1rem;
+        
+        .span-turnos{
+            padding-bottom: 1rem;
+            color: $color-textos;
+            font-family: $fuente-titulos;
+            font-size: 1.15rem;
+        }
+
+        h2{
+            text-align: left;
+            font-family: $fuente-titulos;
+            font-style: bold;
+            font-size: 2rem;
+            margin: 0.75rem 0 0.75rem 0;
+        }
+
+        p{
+            padding-bottom: 1rem;
+            color: $color-textos;
+            font-family: $fuente;
+            font-size: 0.95rem;
+        }
+
+        @media (min-width: 1024px){
+            width: 100%;
+            @include flex(column, center, center, null);
+
+            .span-turnos{
+                padding-bottom: 0;
+            }
+        }
+    }
+}
