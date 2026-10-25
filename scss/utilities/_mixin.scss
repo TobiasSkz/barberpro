@@ -58,3 +58,9 @@
 @mixin trabajos-pc{
     @include flex(row, center, center, 3rem);
 }
+
+@mixin filosofia-pc{
+    @include flex(row, space-between, flex-start, 0.5rem);
+    flex-wrap: nowrap;
+    width: 100%;
+}

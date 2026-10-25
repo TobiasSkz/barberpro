@@ -3,7 +3,7 @@
 @use "../utilities/mixin" as *;
 @use "../utilities/aninations" as *;
 
-// === Tarjeta Hero ===
+// Tarjeta Hero 
 
 .hero{
     padding: 1rem;
@@ -151,7 +151,7 @@
     }
 }
 
-// Sección Servicios
+// Sección servicios
 
 .servicio1, .servicio2, .servicio3{
     @include flex(column, space-between, stretch, 0.5rem);
@@ -239,7 +239,7 @@
     }
 }
 
-// Trabajos recientes
+// Sección trabajos recientes
 
 .foto-trabajo1, .foto-trabajo2, .foto-trabajo3{
     @include flex(column, space-between, stretch, 0.5rem);
