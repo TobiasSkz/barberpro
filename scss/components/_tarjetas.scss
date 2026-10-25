@@ -41,6 +41,7 @@
         border-radius: 0.5rem;
         gap: 0.5rem;
         margin-bottom: 1.5rem;
+        font-family: $fuente;
     }
 
     img{
@@ -136,6 +137,14 @@
             }
         }
 
+        .botones-hero{
+            padding: 1.5rem;
+        }
+
+        .boton-reservar-cita-hero, .boton-ver-servicios{
+            padding: 1rem;
+        }
+
         .hero-texto{
 
             h1{
@@ -144,6 +153,11 @@
                 font-size: clamp(2.5rem, 5vw, 5.5rem);
                 text-transform: uppercase;
                 line-height: 0.95;
+                margin-bottom: 1.25rem;
+            }
+
+            p{
+                margin: 0.5rem;
             }
         }
     }

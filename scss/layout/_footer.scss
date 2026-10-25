@@ -2,3 +2,59 @@
 @use "../utilities/extend" as *;
 @use "../utilities/mixin" as *;
 @use "../utilities/aninations" as *;
+
+.footer{
+    @extend %barra-footer;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    box-sizing: border-box;
+
+    @include flex(column, center, center, 1.75rem);
+    text-align: center;
+    
+    .footer-logo, .footer-ubicacion, .footer-contacto, .footer-redes{
+        @include flex(column, center, center, 0.4rem);
+        width: 100%;
+
+        h3{
+            color: $color-h1;
+            font-family: $fuente-titulos;
+            font-size: 0.95rem;
+            letter-spacing: 0.05;
+            margin-bottom: 0.15rem;
+        }
+
+        p, span{
+            color: $color-textos;
+            font-family: $fuente;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        img{
+            max-width: 60px;
+        }
+    }
+
+    .footer-logo{
+        span:first-of-type{
+            display: none;
+        }
+
+        span:last-child{
+            font-size: 0.75rem;
+            opacity: 0.5;
+            margin-top: 0.25rem;
+        }
+    }
+    
+    .footer-redes{
+        img{
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    @media (min-width: 1024px){
+        @include footer-pc;
+    }
+}

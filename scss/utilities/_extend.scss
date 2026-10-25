@@ -34,3 +34,10 @@
     margin: 0 auto;
     @include flex(row, center, center, 0.5rem);
 }
+
+%barra-footer{
+    color: $color-textos;
+    background-color: $fondo-pagina;
+    width: 100%;
+    text-decoration: none;
+}

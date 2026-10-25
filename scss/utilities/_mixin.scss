@@ -1,3 +1,5 @@
+@use "../utilities/variables" as *;
+
 // Flex
 
 @mixin flex($direccion, $justificar, $alinear, $gap){
@@ -77,5 +79,47 @@
 
     .form4{
         grid-area: form4;
+    }
+}
+
+@mixin footer-pc{
+    @include grid(repeat(3, 1fr), auto, none, 2rem);
+    align-items: start;
+    text-align: left;
+    padding: 2rem 1rem;
+
+    .footer-logo, .footer-ubicacion, .footer-contacto, .footer-redes{
+        @include flex(column, flex-start, flex-start, 0.75rem);
+    }
+
+    .footer-logo{
+        .footer-logo-marca{
+            @include flex(row, flex-start, center, 0.75rem);          
+            
+            img{
+                max-width: 35px;
+            }
+
+            p{
+                color: $color-h1;
+                font-family: $fuente-titulos;
+                font-size: 1.25rem;
+                font-weight: bold;
+                margin: 0;
+            }
+        }
+
+        span:first-of-type{
+            display: block;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            line-height: 1.5;
+        }
+
+        span:last-child{
+            font-size: 0.8rem;
+            opacity: 0.6;
+            margin-top: 1.5rem;
+        }
     }
 }
