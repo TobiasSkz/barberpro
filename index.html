@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barberpro</title>
+    <link rel="icon" type="image/png" href="img/icono.png"> <!-- Icono de la página-->
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,20 +19,20 @@
 <body>
     
     <header>
-        <nav class="menu-de-navegacion">
+        <nav class="menu-de-navegacion" id="inicio">
             <div class="logo">
                 <img src="img/logo-header.png" alt="Logo de Barberpro">
                 <p>BARBERPRO</p>
             </div>
 
             <ul class="lista-navbar">
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">SERVICIOS</a></li>
-                <li><a href="#">TRABAJOS</a></li>
-                <li><a href="#">UBICACIÓN</a></li>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#trabajos">TRABAJOS</a></li>
+                <li><a href="#ubicacion">UBICACIÓN</a></li>
             </ul>
 
-            <a href="#" class="boton-reservar-cita">RESERVAR CITA <span>↗</span></a>
+            <a href="#reservas" class="boton-reservar-cita">RESERVAR CITA <span>↗</span></a>
 
         </nav>
     </header>
@@ -52,8 +53,8 @@
                     </p>
 
                     <div class="botones-hero">
-                        <a href="#" class="boton-reservar-cita-hero">RESERVAR CITA <span>→</span></a>
-                        <a href="#" class="boton-ver-servicios">VER SERVICIOS</a>
+                        <a href="#reservas" class="boton-reservar-cita-hero">RESERVAR CITA <span>→</span></a>
+                        <a href="#servicios" class="boton-ver-servicios">VER SERVICIOS</a>
                     </div>
                 </div>
 
@@ -89,7 +90,7 @@
 
         <!-- Sección de servicios -->
 
-        <section class="seccion-servicios">
+        <section class="seccion-servicios" id="servicios">
             <span class="span-menu-servicios">MENÚ DE SERVICIOS</span>
             <h2 class="titulo-seccion">MENÚ & TARIFAS</h2>
 
@@ -113,7 +114,7 @@
 
                 <div class="footer-tarjeta">
                     <span class="duracion-tarjeta">15 MINUTOS</span>
-                    <a href="#" class="boton-reservar-tarjeta">RESERVAR ></a>
+                    <a href="#reservas" class="boton-reservar-tarjeta">RESERVAR ></a>
                 </div>
                 
             </article>
@@ -138,7 +139,7 @@
 
                 <div class="footer-tarjeta">
                     <span class="duracion-tarjeta">30 MINUTOS</span>
-                    <a href="#" class="boton-reservar-tarjeta">RESERVAR ></a>
+                    <a href="#reservas" class="boton-reservar-tarjeta">RESERVAR ></a>
                 </div>
 
             </article>
@@ -163,7 +164,7 @@
 
                 <div class="footer-tarjeta">
                     <span class="duracion-tarjeta">60 MINUTOS</span>
-                    <a href="#" class="boton-reservar-tarjeta">RESERVAR ></a>
+                    <a href="#reservas" class="boton-reservar-tarjeta">RESERVAR ></a>
                 </div>
                 
             </article>
@@ -172,7 +173,7 @@
 
         <!-- Sección de Trabajos -->
 
-        <section class="seccion-trabajos">
+        <section class="seccion-trabajos" id="trabajos">
             <span class="span-portafolio">PORTAFOLIO</span>
             <h2 class="titulo-seccion">TRABAJOS RECIENTES</h2>
 
@@ -185,7 +186,7 @@
 
         <!-- Sección de reserva de turnos -->
 
-        <section class="seccion-turnos">
+        <section class="seccion-turnos" id="reservas">
             <div class="turnos-titulo">
                 <span class="span-turnos">AGENDA ONLINE</span>
                 <h2 class="titulo-seccion">RESERVA TU ESPACIO</h2>
@@ -247,7 +248,7 @@
         <footer>
 
             <section>
-                <article class="footer">
+                <article class="footer" id="ubicacion">
 
                     <!-- Logo -->
 

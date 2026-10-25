@@ -77,9 +77,9 @@ header .logo p {
   header .menu-de-navegacion {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 3rem;
     flex-wrap: nowrap;
     width: 100%;
     padding: 20px 40px;
@@ -87,15 +87,16 @@ header .logo p {
   header .menu-de-navegacion .logo {
     display: flex;
     align-items: center;
+    gap: 0.75rem;
   }
   header .menu-de-navegacion .lista-navbar {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     list-style: none;
+    margin-right: auto;
   }
   header .menu-de-navegacion .boton-reservar-cita {
-    margin-left: auto;
     white-space: nowrap;
     flex-shrink: 0;
   }
@@ -105,9 +106,9 @@ header .logo p {
   header nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 3rem;
     flex-wrap: nowrap;
     width: 100%;
     padding: 20px 40px;
@@ -115,24 +116,26 @@ header .logo p {
   header nav ul .logo {
     display: flex;
     align-items: center;
+    gap: 0.75rem;
   }
   header nav ul .lista-navbar {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     list-style: none;
+    margin-right: auto;
   }
   header nav ul .boton-reservar-cita {
-    margin-left: auto;
     white-space: nowrap;
     flex-shrink: 0;
   }
   header nav ul .boton-reservar-cita span {
     font-size: 1.25rem;
   }
-  header nav ul {
-    margin: 0.5rem 0;
-  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

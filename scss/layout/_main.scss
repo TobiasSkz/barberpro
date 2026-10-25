@@ -3,6 +3,10 @@
 @use "../utilities/mixin" as *;
 @use "../utilities/aninations" as *;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: $fondo-pagina;
 
